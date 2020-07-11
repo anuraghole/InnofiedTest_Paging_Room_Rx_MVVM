@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.example.innofiedtest.model.User" />
+
+    </data>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:padding="@dimen/dimen_5dp"
+                android:id="@+id/ivAvatar"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_placeholder" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:gravity="center"
+                android:hint="@string/name"
+                android:id="@+id/tvName"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="bold"
+                android:padding="@dimen/dimen_5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{model.name}"/>
+
+            <TextView
+                android:gravity="center"
+                android:hint="@string/email"
+                android:id="@+id/tvEmail"
+                android:textSize="@dimen/text_size_14"
+                android:padding="@dimen/dimen_5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{model.email}" />
+
+        </LinearLayout>
+
+</layout>

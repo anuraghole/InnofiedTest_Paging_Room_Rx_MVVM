@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">InnofiedTest</string>
+    <string name="email">email@mail.com</string>
+    <string name="name">Test Name</string>
+</resources>
